@@ -10,7 +10,7 @@ public class Invoker : MonoBehaviour
     
     public UnityEvent<Stat> OnStatChanged = new UnityEvent<Stat>();
 
-    private Stat statA = new Stat();
+    private Stat statABC = new Stat();
 
     private void Awake()
     {
