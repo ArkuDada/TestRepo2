@@ -1,0 +1,4 @@
+repository "temp@ArkuDada@cloud"
+  path "/"
+    br "/main"
+    co "/main"
