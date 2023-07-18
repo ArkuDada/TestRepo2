@@ -9,24 +9,24 @@ public class Invoker : MonoBehaviour
     public static Invoker Instance;
     
     public UnityEvent<Stat> OnStatChanged = new UnityEvent<Stat>();
-
-    private Stat statA = new Stat();
+    
+    private Stat statABCDEFLOL = new Stat();
 
     private void Awake()
     {
         Instance = this;
         
-        statA.name = "HP";
-        statA.value = 0;
+        statABCDEFLOL.name = "HP";
+        statABCDEFLOL.value = 0;
     }
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log(statA.value);
-            OnStatChanged?.Invoke(statA);
-            statA.value++;
+            Debug.Log(statABCDEFLOL.value);
+            OnStatChanged?.Invoke(statABCDEFLOL);
+            statABCDEFLOL.value++;
         }
     }
 }
